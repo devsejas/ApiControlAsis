@@ -13,6 +13,8 @@ class StudentsController < ApplicationController
     render json: @student
   end
 
+
+# curl -H "Content-Type:application/json"
   # POST /students
   def create
     @student = Student.new(student_params)
